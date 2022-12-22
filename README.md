@@ -1,3 +1,20 @@
+## Notes for Tabletop Club
+
+* In order to fix [godotengine/build-containers#99](https://github.com/godotengine/build-containers/issues/99),
+the following command needs to be run before building the images:
+```bash
+sudo setenforce 0
+```
+
+* In order to fix [tpoechtrager/osxcross#363](https://github.com/tpoechtrager/osxcross/issues/363),
+the `tpoechtrager/osxcross` repository has been replaced with the `cschol/osxcross`
+repository, which is used in the PR [tpoechtrager/osxcross#367](https://github.com/tpoechtrager/osxcross/pull/367).
+
+* Android, iOS, Javascript, and MSVC images have been removed.
+
+* The OSX image has been split up into multiple snapshots due to the large build
+times, adding about 7GB to the image size.
+
 # Godot engine build containers
 
 This repository contains the Dockerfiles for the official Godot engine builds.
