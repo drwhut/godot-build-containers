@@ -1,3 +1,8 @@
+```sh
+# Required so containers can access files/
+sudo setenforce 0
+```
+
 # Godot engine build containers
 
 This repository contains the Dockerfiles for the official Godot engine builds.
