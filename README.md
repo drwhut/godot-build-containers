@@ -45,13 +45,13 @@ you are building for (e.g. `3.x`) and what Linux distribution the `Dockerfile.ba
 is based on (e.g. `f36` for Fedora 36).
 
 The third argument is important and should be the name of a tagged Mono release from
-the upstream `2020-02` branch (e.g. `mono-6.12.0.182`).
+the upstream `2020-02` branch (e.g. `mono-6.12.0.198`).
 
 Run the command using:
 
-    ./build.sh 3.x f36 mono-6.12.0.182
+    ./build.sh 3.x f36 mono-6.12.0.198
 
-The above will generate images using the tag '3.x-f36-mono-6.12.0.182'.
+The above will generate images using the tag '3.x-f36-mono-6.12.0.198'.
 You can then specify it in the `build.sh` of [godot-build-scripts]().
 
 ### Selecting which images to build
@@ -73,16 +73,16 @@ you can comment out the corresponding lines from the script:
 These are the expected container image sizes, so you can plan your disk usage in advance:
 
     REPOSITORY                                       TAG                        SIZE
-    localhost/godot-fedora                           3.x-f36-mono-6.12.0.182    546 MB
-    localhost/godot-export                           3.x-f36-mono-6.12.0.182    1.03 GB
-    localhost/godot-mono                             3.x-f36-mono-6.12.0.182    1.41 GB
-    localhost/godot-mono-glue                        3.x-f36-mono-6.12.0.182    1.75 GB
-    localhost/godot-linux                            3.x-f36-mono-6.12.0.182    3.8 GB
-    localhost/godot-windows                          3.x-f36-mono-6.12.0.182    3.31 GB
-    localhost/godot-javascript                       3.x-f36-mono-6.12.0.182    3.87 GB
-    localhost/godot-android                          3.x-f36-mono-6.12.0.182    6.06 GB
-    localhost/godot-osx                              3.x-f36-mono-6.12.0.182    5.71 GB
-    localhost/godot-ios                              3.x-f36-mono-6.12.0.182    6.53 GB
+    localhost/godot-fedora                           3.x-f36-mono-6.12.0.198    546 MB
+    localhost/godot-export                           3.x-f36-mono-6.12.0.198    1.03 GB
+    localhost/godot-mono                             3.x-f36-mono-6.12.0.198    1.41 GB
+    localhost/godot-mono-glue                        3.x-f36-mono-6.12.0.198    1.75 GB
+    localhost/godot-linux                            3.x-f36-mono-6.12.0.198    3.8 GB
+    localhost/godot-windows                          3.x-f36-mono-6.12.0.198    3.31 GB
+    localhost/godot-javascript                       3.x-f36-mono-6.12.0.198    3.87 GB
+    localhost/godot-android                          3.x-f36-mono-6.12.0.198    6.06 GB
+    localhost/godot-osx                              3.x-f36-mono-6.12.0.198    5.71 GB
+    localhost/godot-ios                              3.x-f36-mono-6.12.0.198    6.53 GB
 
 In addition to this, generating containers will also require some host disk space
 (up to 30 GB) for the downloaded Mono sources and dependencies (Xcode, MSVC).
@@ -93,7 +93,7 @@ In addition to this, generating containers will also require some host disk spac
 These are the toolchains currently in use for Godot 3.5 and later:
 
 - Base image: Fedora 36
-- Mono version: 6.12.0.182
+- Mono version: 6.12.0.198
 - SCons: 4.3.0
 - Linux: GCC 10.2.0 built against glibc 2.19, binutils 2.35.1, from our own [Linux SDK](https://github.com/godotengine/buildroot)
 - Windows: MinGW 9.0.0, GCC 11.2.0, binutils 2.37
