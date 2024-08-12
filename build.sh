@@ -62,7 +62,7 @@ if [ ! -e ${mono_root} ]; then
   # Set up godot-mono-builds in tree
   git clone --progress https://github.com/godotengine/godot-mono-builds
   pushd godot-mono-builds
-  git checkout 8767196960fb884ae95f337ee10cb131ae720086
+  git checkout 4912f62a8f263e5673012de6ed489402af2d63bb
   export MONO_SOURCE_ROOT=${mono_root}
   python3 patch_mono.py
   popd
